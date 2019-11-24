@@ -41,15 +41,15 @@ To plot these results you will have to open plot.cpp and change the start file a
 draw(<start file name>)
 ```
 ## Examples
-### Earth Moon System
-The start file for th Earth Moon system and an example are included. This shows the movement around the barycentre and is a good example of two body motion with two significant masses.
-![Image of Earth Moon System Output](Examples/EarthMoonSystem/10Months1SecondSteps/plot.jpg)
 ## Solar System Major Bodies
 Below is an example of the the Sun, Earth, Jupiter, Saturn and Neptune.
 ![Image of Solar System Output](Examples/MajorSolarSystemBodies/2Years/plot.jpg)
 ## Circulrisation Burn
 The below example shows a circularisation burn after 3.5 orbits in an eccentric orbit followed by 1.5 orbits in the new circularised orbit. This demonstrates the ability to program in course changes, the start file shows how this can be implimented.
 ![Image of circulrisation burn](Examples/CirculrisationBurn/plot.jpg)
+### Earth Moon System
+The start file for th Earth Moon system and an example are included. This shows the movement around the barycentre and is a good example of two body motion with two significant masses.
+![Image of Earth Moon System Output](Examples/EarthMoonSystem/10Months1SecondSteps/plot.jpg)
 ## Accuracy
 The accuracy of the integration system can be anylised as described in the paper. To test the accuracy a series of different 2 body problems were peformed and it was shown that for an eccentricity of between 0.1 and 0.9 it is possible to get less than 0.0001m accuracy after many orbits. It was established that for the range of 0.1 to 0.7 eccentricity and 3000 to 10000 function calls per orbit the error approximatly followed the relationship \epsilon = e^{4.55E-0.000136n-2.08} where E is the eccentricity, n is the number of function calls per orbit and \epsilon is the error in the position. This range is appropriate for LEO objects and therefore it is shown that the simulation is appropriate for objects in LEO. An error as described by the function in Section 3 in the paper is also shown to be achieved.
 
