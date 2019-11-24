@@ -59,4 +59,4 @@ The data showing this is included in the Accuracy Test section but is very poorl
 ## Improvements
 -Impliment variable timestep functionality where by the timestep varies as given in the book
 -Impliment block timesteps where objects timesteps are floored to the nearest negative power of two and objects in each group are simulated in together allowing objects requiring more precision to be simulated separatly from those that don't
-
+-Change how the plotting script finds the names of the body in the output file 
