@@ -65,4 +65,5 @@ The data showing this is included in the Accuracy Test section but is very poorl
 - Implement block timesteps where objects timesteps are floored to the nearest negative power of two and objects in each group are simulated in together allowing objects requiring more precision to be simulated separately from those that don't
 - Allow bodies radius to be defined so that draw.py can then depict it 
 - Make draw.py have animation option
+- Add other forces like solar winds
 
