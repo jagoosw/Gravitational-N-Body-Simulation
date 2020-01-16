@@ -59,6 +59,7 @@ The accuracy of the integration system can be analysed as described in the paper
 
 A test is incliuded where the program was propogated for 10000 steps with the eccentricities 0.1,0.3,0.5,0.7 and 1709,8400,15091 and 21782 steps respectivly (from the relationship established above), this test took an extremely long time to run and I have not had a chance to check the numerical accuracy of the propogation but the figure below shows that it hold at least on the percevable scale. It is not helped by the fact that the program only saved the position every 1.01 orbits so it is very hard to test the datas accuracy, had I just saved the final position which should have been at the starting position then there would have been at least that point to test the accuracy from. I will complete this at some point.
 ![Image of Long Test Results](Examples/longTest.jpg)
+It should be noted from this image that the relationship does seem to have calculated the required number of steps much better for the less extreme eccentricities (not 0.1). 
 
 More evidence for the accuracy will follow.
 
