@@ -57,6 +57,9 @@ The below example shows a circularisation burn after 3.5 orbits in an eccentric 
 ## Accuracy
 The accuracy of the integration system can be analysed as described in the paper. To test the accuracy a series of different 2 body problems were performed, and it was shown that for an eccentricity of between 0.1 and 0.9 it is possible to get less than 0.0001m accuracy after many orbits. It was established that for the range of 0.1 to 0.7 eccentricity and 3000 to 10000 function calls per orbit the error approximately followed the relationship \epsilon = e^{4.55E-0.000136n-2.08} where E is the eccentricity, n is the number of function calls per orbit and \epsilon is the error in the position. This range is appropriate for LEO objects and therefore it is shown that the simulation is appropriate for objects in LEO. An error as described by the function in Section 3 in the paper is also shown to be achieved.
 
+A test is incliuded where the program was propogated for 10000 steps with the eccentricities 0.1,0.3,0.5,0.7 and 1709,8400,15091 and 21782 steps respectivly (from the relationship established above), this test took an extremely long time to run and I have not had a chance to check the numerical accuracy of the propogation but the figure below shows that it hold at least on the percevable scale. It is not helped by the fact that the program only saved the position every 1.01 orbits so it is very hard to test the datas accuracy, had I just saved the final position which should have been at the starting position then there would have been at least that point to test the accuracy from. I will complete this at some point.
+![Image of Long Test Results](Accuracy Test/10000OrbitTest/plot.jpg)
+
 More evidence for the accuracy will follow.
 
 The data showing this is included in the Accuracy Test section but is very poorly formatted.
